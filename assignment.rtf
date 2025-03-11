@@ -1,0 +1,277 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang16393{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\b\f0\fs40\lang9 Assignment \b0\fs32\par
+
+\pard\sa200\sl276\slmult1 1. python program to calculate the area of a rectangle using user input for length and width \par
+length = float(input ("enter the length of the rectangle:"))\par
+width = float (input ("enter the width of the rectangle:"))\par
+calculate the area \par
+area = length *width\par
+print(f"the area of the rectangle is:\{area\}").\par
+so ,for example: length :5 and width :3 the calculated area is 15.\par
+the output: the area of the rectangle is : 15.0.\par
+2. let the three numbers from the user\par
+num1 = float (input("enter the first number:"))\par
+num2 = float(input("enter the second number:"))\par
+num3 = float(input("enter the third number:"))\par
+\b if\b0  num1>=num2and num1>=num3:\par
+max_num=num1\par
+\b elif\b0  num2>= num1and num2>=num3:\par
+max_num=num2\par
+\b else \par
+\b0 max_num=num3\par
+print (f"the maximum number is: \{max_num\}")\par
+example:  enter first number :10\par
+enter second number:20\par
+enter third number: 15\par
+The maximum number is: 20.0.\par
+3. a=20\par
+b=10\par
+print(f"before swaping:a=\{a\},b=\{b\}")\par
+\fs22 swap values \par
+\fs32 a,b=b,a\par
+print(f"after swaping: a=\{a\},b=\{b\}")\par
+output: before swaping: a=20,b=10\par
+after swaping: a=10,b=20.\par
+by tuple unpacking: a,b=b,a creates a tuple on the right-hand side values b,a and then unpack those values into variables a and b on the left-hand side.\par
+5.python program that counts the number of vowels (a,i,e,o,u) in a given string:\par
+count_vowels(input_string):\par
+for char in input_string:\par
+if char  in vowels:\par
+count+=1\par
+return count\par
+user_input = input ("Enter a string:")\par
+vowel_count=count_vowels(user_input)\par
+print(f"the number of vowels in the given string is: \{vowel_count\}").\par
+example: Enter a string: Hello World\par
+The number of vowels in the given string is: 3.\par
+6. is- prime(number):\par
+  if number <= 1:\par
+     return false\par
+for i in range (2,number):\par
+      if number %i ==0:\par
+        return false\par
+return true\par
+input\par
+num = int(input("Enter a number: "))\par
+if is_prime(num):\par
+    print(f"\{num\} is a prime number.")\par
+else:\par
+    print(f"\{num\} is not a prime number.").\par
+7.factorial(n):\par
+ifn==0 or n==1:\par
+      return 1\par
+else:\par
+retrun n* factorial(n-1)\par
+ num=int(input("enter a number:"))\par
+if num<0:\par
+     print("Factorial is not defined for negative numbers.")\par
+else: \par
+    print(f"the factorial of \{num\}is \{factorial (num)\}")\par
+the function factorial(n) calls itself with n-1 until it reaches the base case(when n is 0 or 1).\par
+9. \par
+     remove_duplicates(input_list):\par
+    return list (set(input_list))\par
+print("List after removing duplicates:",output_list)\par
+output_list=remove_duplicates(input_list)\par
+example:input_list=[1,2,3,4,5,5,6,1,2,7,8]\par
+output:\par
+list after removing duplicates:[1,2,3,4,5,6,7,8]\par
+10.intersection(list1,list2):\par
+       return list(set(list1)&set(list2))\par
+print("intersection of the two lists:",result)\par
+Result= intersection (list1,list2)\par
+example: list1=[10,22,23,11,12]\par
+ \tab\tab list2=[12,22,24,26,24]\par
+output: intersection of the two lists:[12,22]\par
+11. find_longest_word(words):\par
+longest_word=max(words,  key=len)\par
+longest_word=find_longest_word(words)\par
+print("the longest word is:",longest_word)\par
+example:\par
+words=["monkey",Elephant","Bear","Horse",Fox","lion"]\par
+ouput:\par
+the longest word is :Elephant.\par
+12.\par
+count_word_occurrences(input_string):\par
+words= input_string.split()\par
+word_count=\{\}\par
+for word in words:\par
+  word=word.lower()\par
+if word in word_count:\par
+\tab word_count[word] +=1\par
+else:\par
+word_count[word] =1\par
+return word_count\par
+for word, count in word_count.items():\par
+print(f"'\{word\}':\{count\}")\par
+example:  "hello i am soujanya, hello i .\par
+output:' hello':2\par
+\tab 'i':2\par
+\tab 'am':1\par
+\tab 'soujanya':1.\par
+13. reverse_string(input_string);\par
+return input_string[::-1]\par
+print(f"reversed string: \{reversed_string\}")\par
+example: input_string="soujanya"\par
+output: reversed string: aynajuos.\par
+14. sort_by_second_element(tuples_list);\par
+   return sorted(tuples_list, key=lambdaX:X[1])\par
+print("sorted list based on second element:",sorted_list)\par
+example:\par
+tuples_list=[(1,5),(3,2),(4,9),(2,4)]\par
+sorted_list= sort_by_second_element(tuples_list)\par
+output:\par
+sorted list based on second element:[(3,2),(2,4),(1,5),(4,9)].\par
+15. sum_of_elements(input_list):\par
+total_sum=0\par
+for element in input_list: \par
+ \tab total_sum += element\par
+  return total_sum\par
+print(f"the sum of all elements in the list is: \{result\}")\par
+example: input_list=[10,20,30,40,50]\par
+result=sum_of_elements(input_list)\par
+output: the sum of all elements in the list is:150.\par
+16.\par
+remove_last_element(input_list):\par
+input_list.pop()\par
+return input_list\par
+print(f"updated list after removing the last element:\{updated_list\}")\par
+example:input_list=[1,2,3,4,5,6]\par
+updated_list=remove_last_element(input_list)\par
+output:\par
+updated list after removing the last element:[1,2,3,4,5].\par
+18.\par
+common_characters(str1,str2):\par
+common_chars=set(str1)&set(str2)\par
+return common_chars\par
+print(f"common characters between '\{str1\}' and '\{str2\}':\{common_chars\}")\par
+example: str1="monkey"\par
+\tab str2="fox"\par
+output: common characters between 'monkey' and 'fox':\{'o'\}.\par
+20.set_difference(set1,set2):\par
+return set1-set2\par
+print(f"the difference between set1 and set2 is:\{result\}")\par
+example: set1=[1,2,3,4,5]\par
+\tab set2=[4,5,6,7,8]\par
+result=set_difference(set1,set2)\par
+output:\par
+the difference between set1 and set2 is:[1,2,3].\par
+21. sum_result=a+b\par
+difference_result=a-b\par
+product_result=a*b\par
+quotient_result=a/b\par
+print(f"Sum of \{a\} and \{b\}: \{sum_result\}")\par
+print(f"Difference of \{a\} and \{b\}: \{difference_result\}")\par
+print(f"Product of \{a\} and \{b\}: \{product_result\}")\par
+print(f"Quotient of \{a\} and \{b\}: \{quotient_result\}")\par
+example:a=10,b=5\par
+output:\par
+sum of 10 and 5:15\par
+difference of 10 and 5 : 5\par
+product of 10 and 5: 50 \par
+quptient of 10 and 5: 2.0.\par
+22.\par
+less_than=a<B\par
+greater_than=a>b\par
+less_than_or_equal=a<=b\par
+greater_than_or_equal=a>=b\par
+equal_to=a==b\par
+not_equal_to=a!=b\par
+print(f"\{a\}<\{b\}: \{less_than\}")\par
+print(f"\{a\}>\{b\}: \{greater_than\}")\par
+print(f"\{a\}<=\{b\}: \{less_than_or_equal\}")\par
+print(f"\{a\}>=\{b\}:\{greater_than_or_equal\}")\par
+print(f"\{a\}==\{b\}:\{equal_to\}")\par
+print(f"\{a\}!=\{b\}:\{not_equal_to\}")\par
+example: x=2,y=4\par
+output: \par
+2<4: true\par
+2>4: false\par
+2<=4: true\par
+2>=4:false\par
+2==4: false\par
+2!=4:true.\par
+23. and_result=x and y \par
+\tab or_result =x or y\par
+\tab not_x_result=not x\par
+\tab not_y_result=not y\par
+print(f"x and y: \{and_result\}")\par
+print(f"x or y: \{or_result\}")\par
+print(f"not x: \{not_x_result\}")\par
+print(f"not y: \{not_y_resut\}")\par
+example: x=true\par
+y=false\par
+output:\par
+x and y : false\par
+x or y: true\par
+not x:false\par
+not y: true.\par
+24.total=20\par
+ total+= 10\par
+total-=5\par
+total*=3\par
+total/=2\par
+print(f"the final value of total is:\{total\}")\par
+example:total+= 10 \par
+total-=5\par
+total*=3\par
+total/=2\par
+the final value of total is : 22.5\par
+total=20+10=30\par
+total =30-5=25\par
+total=25*3=75\par
+total=75/2=22.5.\par
+25.bitwise operators in python: \par
+&:sets each bit to 1 if both bits are 1.\par
+|:sets each bit to 1 if one of the bits is 1.\par
+^: sets each bit to 1 if the bits are different.\par
+~: inverts all the bits.\par
+<<: shifts the bits to the left by the specified number of positions.\par
+>>: shifts the bits to the right by the specified number of positions.\par
+example: x=5 # in binary:0101.\par
+\tab y=3#in binary: 0011\par
+print(f"a&b: \{and_result\}")\par
+print(f"a|b: \{or_result\}")\par
+print(f"a^b: \{xor_result\}")\par
+print(f"~a: not_result\}")\par
+print(f"a<<1:\{left_shift_result\}")\par
+print(f"a>>1: \{right_shift_result\}")\par
+output:\par
+a&b:1\par
+a|b:7\par
+a^b:6\par
+~a:-6\par
+a<<1: 10\par
+a>>:2.\par
+26. identity operators:\par
+\fs36 is: \fs32 returns true if both variables point to the same object in memory.\par
+is not:Returns true if both variables do not point to the same object.\par
+Membership operators\fs36 :\par
+\fs32 in: checks if the value \fs28 is present in the given sequence.\par
+not in: checks if the value is not present in the given sequence.\par
+example: list=[1,2,3,4,5]\par
+a=list[2]\par
+b=list[2]\par
+c=10\par
+identity \par
+is_same_object=a is b\par
+is_not_same_object=a is not c\par
+membership\par
+value_in_list = 3 in list\par
+value_not_in_list =8 not in list\par
+print(f"a is b: \{is_same_object\}")\par
+print(f"a is not b: \{is_not_same_object\}")\par
+print(f"3 in list: \{value_in_list\}")\par
+print(f"8 not in list: \{value_not_in_list\}")\par
+output:\par
+a is b :true\par
+a is not c: true\par
+3 in list: true \par
+8 not in list : true..\par
+\par
+\fs32\par
+\par
+\fs22\par
+}
+ 
